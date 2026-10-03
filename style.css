@@ -3,3 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* MOBILE MENU */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar {
+        position: relative;
+    }
+}
