@@ -1,7 +1,6 @@
-// UK Ikoh Electrical & Engineering
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 
-console.log("UK Ikoh website is working!");
-
-function showMessage() {
-    alert("Welcome to UK Ikoh Electrical & Engineering!");
-}
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+});
